@@ -2,37 +2,38 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-function Detail() {
+function Detail14() {
   return (
     <Container>
         <Background>
-            <img src='https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591031799-415LLMdH0xL.jpg'/>
+            <img src='https://qph.cf2.quoracdn.net/main-qimg-57146ad259302b5670db3ead598bfd62.webp'/>
         </Background>
         <Controls>
             {/* <AddButton>
                 <span>+</span>
                 <span>ADD</span>
             </AddButton> */}
-                        <AddButton>
+            <AddButton>
                 <span>+</span>
                 <span>BUY</span>
             </AddButton>
             <ShareButton>
                 {/* <img src='/images/group-icon.png' /> */}
-                <span>$2000</span>
+                <span>$800</span>
             </ShareButton>
         </Controls>
         <SubTitle>
-                2016 - SHOE DOG - PHIL KNIGHT
+                2016 - One Indian Girl  -  Chetan Bhagat
         </SubTitle>
         <Description>
-            NEW YORK TIMES BESTSELLER In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days as an intrepid start-up and its evolution into one of the world’s most iconic, game-changing, and profitable brands.Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. 
+           The book begins with Radhika making arrangements regarding her marriage with Brijesh Gulati who works as a software engineer for Facebook in San Francisco. She later revealed her childhood and life in Delhi, as a studious, shy and nerdy girl who came from a middle-class family. Radhika has an elder sister, Aditi who was the more beautiful, outgoing, and popular one at their school. She also communicated her thoughts and decisions to her inner judgemental voice or "mini-me" as called.
+While trying to engage in conversation with Brijesh, she was unexpectedly contacted by Debashish "Debu" Sen, her ex-boyfriend, who wished to meet her, to which she refused. 
         </Description>
     </Container>
   )
 }
 
-export default Detail
+export default Detail14
 const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
@@ -53,7 +54,7 @@ const Background = styled.div`
     img{
         width: 100%;
         height: 100%;
-        max-height:350px;
+        max-height:550px;
         object-fit: cover;
     }
 `
@@ -70,7 +71,7 @@ const AddButton = styled.button`
     border-radius: 4px;
     font-size: 15px;
     padding: 0px 15px;
-    margin-top: 350px;
+    margin-top: 250px;
     margin-right: 22px;
     display: flex;
     align-items: center;
@@ -95,11 +96,12 @@ const SubTitle = styled.div`
     font-size: 15px;   
     min-height: 20px;
     margin-top: 20px;
+    text-transform: uppercase;
 `
 const Description = styled.div`
     position: fixed;
     font-size: 20px;
     margin-top: 16px;
     line-height: 1.4;
-    
+
 `

@@ -2,37 +2,37 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-function Detail() {
+function Detail9() {
   return (
     <Container>
         <Background>
-            <img src='https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591031799-415LLMdH0xL.jpg'/>
+            <img src='https://m.media-amazon.com/images/I/71e9MY-XE9L._AC_UL320_.jpg'/>
         </Background>
         <Controls>
             {/* <AddButton>
                 <span>+</span>
                 <span>ADD</span>
             </AddButton> */}
-                        <AddButton>
+            <AddButton>
                 <span>+</span>
                 <span>BUY</span>
             </AddButton>
             <ShareButton>
                 {/* <img src='/images/group-icon.png' /> */}
-                <span>$2000</span>
+                <span>$1000</span>
             </ShareButton>
         </Controls>
         <SubTitle>
-                2016 - SHOE DOG - PHIL KNIGHT
+                1992 - The Blue Umbrella - Ruskin Bond 
         </SubTitle>
         <Description>
-            NEW YORK TIMES BESTSELLER In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days as an intrepid start-up and its evolution into one of the world’s most iconic, game-changing, and profitable brands.Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. 
+           The Umbrella was like a flower, a great blue flower that had sprung up on the dry brown hillside.'In exchange for her lucky leopard's claw pendant, Binya acquires a beautiful blue umbrella that makes her the envy of everyone in her village, especially Ram Bharosa, the shop-keeper. Ruskin Bond's short and humorous novella, set in the picturesque hills of Garhwal, perfectly captures life in a village, where both heroism and redemption can be found.
         </Description>
     </Container>
   )
 }
 
-export default Detail
+export default Detail9
 const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
@@ -70,7 +70,7 @@ const AddButton = styled.button`
     border-radius: 4px;
     font-size: 15px;
     padding: 0px 15px;
-    margin-top: 350px;
+    margin-top: 325px;
     margin-right: 22px;
     display: flex;
     align-items: center;
@@ -95,11 +95,12 @@ const SubTitle = styled.div`
     font-size: 15px;   
     min-height: 20px;
     margin-top: 20px;
+    text-transform: uppercase;
 `
 const Description = styled.div`
     position: fixed;
     font-size: 20px;
     margin-top: 16px;
     line-height: 1.4;
-    
+
 `

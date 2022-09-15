@@ -2,37 +2,37 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-function Detail() {
+function Detail11() {
   return (
     <Container>
         <Background>
-            <img src='https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591031799-415LLMdH0xL.jpg'/>
+            <img src='https://www.bookgeeks.in/wp-content/uploads/2018/01/The-Complete-Works-of-Swami-Vivekananda.jpg'/>
         </Background>
         <Controls>
             {/* <AddButton>
                 <span>+</span>
                 <span>ADD</span>
             </AddButton> */}
-                        <AddButton>
+            <AddButton>
                 <span>+</span>
                 <span>BUY</span>
             </AddButton>
             <ShareButton>
                 {/* <img src='/images/group-icon.png' /> */}
-                <span>$2000</span>
+                <span>$500</span>
             </ShareButton>
         </Controls>
         <SubTitle>
-                2016 - SHOE DOG - PHIL KNIGHT
+                2013 - The Complete Works of Swami Vivekanand - Swami Vivekananda
         </SubTitle>
         <Description>
-            NEW YORK TIMES BESTSELLER In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days as an intrepid start-up and its evolution into one of the world’s most iconic, game-changing, and profitable brands.Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. 
+            In these volumes we have not only a gospel to the world at large, but also, to its own children, the Charter of the Hindu faith. For the first time in history, Hinduism itself forms here the subject of generalization of a Hindu mind of the highest order. What Hinduism had needed was the organizing and consolidating of its own idea, a rock where she could lie at anchor, and an authoritative utterance in which she might recognize herself. What the world had needed was a faith that had no fear of truth. Both are found in the words and writings of Swami Vivekananda. It is the latest gospel of a modern Prophet of religion and spirituality to the mankind.' - Sister Nivedita
         </Description>
     </Container>
   )
 }
 
-export default Detail
+export default Detail11
 const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
@@ -70,7 +70,7 @@ const AddButton = styled.button`
     border-radius: 4px;
     font-size: 15px;
     padding: 0px 15px;
-    margin-top: 350px;
+    margin-top: 325px;
     margin-right: 22px;
     display: flex;
     align-items: center;
@@ -95,11 +95,12 @@ const SubTitle = styled.div`
     font-size: 15px;   
     min-height: 20px;
     margin-top: 20px;
+    text-transform: uppercase;
 `
 const Description = styled.div`
     position: fixed;
     font-size: 20px;
     margin-top: 16px;
     line-height: 1.4;
-    
+
 `

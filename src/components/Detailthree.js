@@ -2,37 +2,37 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-function Detail() {
+function Detailthree() {
   return (
     <Container>
         <Background>
-            <img src='https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591031799-415LLMdH0xL.jpg'/>
+            <img src='https://i.insider.com/61140d163dd01000199d2ad8?width=750&format=jpeg&auto=webp'/>
         </Background>
         <Controls>
             {/* <AddButton>
                 <span>+</span>
                 <span>ADD</span>
             </AddButton> */}
-                        <AddButton>
+            <AddButton>
                 <span>+</span>
                 <span>BUY</span>
             </AddButton>
             <ShareButton>
                 {/* <img src='/images/group-icon.png' /> */}
-                <span>$2000</span>
+                <span>$950</span>
             </ShareButton>
         </Controls>
         <SubTitle>
-                2016 - SHOE DOG - PHIL KNIGHT
+                1990 - FRIDAY NIGHTS LIGHTS - H.G.BISSINGER
         </SubTitle>
         <Description>
-            NEW YORK TIMES BESTSELLER In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days as an intrepid start-up and its evolution into one of the world’s most iconic, game-changing, and profitable brands.Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. 
+            In the state of Texas American football is a religion. And nowhere is more fanatical about its football than the small town of Odessa. There, every Friday night from September to November, a bunch of seventeen-year-old kids play their hearts out for the honour of their high school.
         </Description>
     </Container>
   )
 }
 
-export default Detail
+export default Detailthree
 const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
@@ -101,5 +101,4 @@ const Description = styled.div`
     font-size: 20px;
     margin-top: 16px;
     line-height: 1.4;
-    
 `

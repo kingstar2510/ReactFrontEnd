@@ -2,37 +2,42 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-function Detail() {
+function Detailfive() {
+    // function buy(){
+    //     alert("book added");
+    // }
+
   return (
     <Container>
         <Background>
-            <img src='https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591031799-415LLMdH0xL.jpg'/>
+            <img src='https://cdn.lifehack.org/wp-content/uploads/2015/05/31055903/1-The-Kite-Runner-Riverhead-Edition.jpg'/>
         </Background>
         <Controls>
             {/* <AddButton>
                 <span>+</span>
                 <span>ADD</span>
             </AddButton> */}
-                        <AddButton>
+            <AddButton >
                 <span>+</span>
-                <span>BUY</span>
+                <span >BUY</span>
             </AddButton>
             <ShareButton>
                 {/* <img src='/images/group-icon.png' /> */}
-                <span>$2000</span>
+                <span>$600</span>
             </ShareButton>
         </Controls>
         <SubTitle>
-                2016 - SHOE DOG - PHIL KNIGHT
+                2013 - KITE RUNNER - KHALEED Hosseini
         </SubTitle>
         <Description>
-            NEW YORK TIMES BESTSELLER In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days as an intrepid start-up and its evolution into one of the world’s most iconic, game-changing, and profitable brands.Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. 
+            Afghanistan, 1975: Twelve-year-old Amir is desperate to win the local kite-fighting tournament and his loyal friend Hassan promises to help him. But neither of the boys can foresee what will happen to Hassan that afternoon, an event that is to shatter their lives.After the Russians invade and the family is forced to flee to America, Amir realises that one day he must return to Afghanistan under Taliban rule to find the one thing that his new world cannot grant him redemption.
+
         </Description>
     </Container>
   )
 }
 
-export default Detail
+export default Detailfive
 const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
@@ -95,11 +100,12 @@ const SubTitle = styled.div`
     font-size: 15px;   
     min-height: 20px;
     margin-top: 20px;
+    text-transform: uppercase;
 `
 const Description = styled.div`
     position: fixed;
     font-size: 20px;
     margin-top: 16px;
     line-height: 1.4;
-    
+
 `

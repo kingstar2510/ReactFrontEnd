@@ -2,37 +2,37 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-function Detail() {
+function Detail10() {
   return (
     <Container>
         <Background>
-            <img src='https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591031799-415LLMdH0xL.jpg'/>
+            <img src='https://img.theculturetrip.com/wp-content/uploads/2017/08/great-indian-novel-shashi-tharoor-viking-press.jpg'/>
         </Background>
         <Controls>
             {/* <AddButton>
                 <span>+</span>
                 <span>ADD</span>
             </AddButton> */}
-                        <AddButton>
+            <AddButton>
                 <span>+</span>
                 <span>BUY</span>
             </AddButton>
             <ShareButton>
                 {/* <img src='/images/group-icon.png' /> */}
-                <span>$2000</span>
+                <span>$500</span>
             </ShareButton>
         </Controls>
         <SubTitle>
-                2016 - SHOE DOG - PHIL KNIGHT
+                2014 - The Great Indian Novel - Shashi Tharoor
         </SubTitle>
         <Description>
-            NEW YORK TIMES BESTSELLER In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days as an intrepid start-up and its evolution into one of the world’s most iconic, game-changing, and profitable brands.Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. 
+            In this award-winning, internationally acclaimed novel, Tharoor has masterfully recast the 2,000 year-old epic, The Mahabharata, with fictional but highly recognizable events and characters from twentieth-century Indian politics. Chronicling the Indian struggle for freedom and independence from Great Britain, Tharoor directs his hilarious satire as much against Indian foibles as the bumbling of the British rulers.
         </Description>
     </Container>
   )
 }
 
-export default Detail
+export default Detail10
 const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
@@ -95,11 +95,12 @@ const SubTitle = styled.div`
     font-size: 15px;   
     min-height: 20px;
     margin-top: 20px;
+    text-transform: uppercase;
 `
 const Description = styled.div`
     position: fixed;
     font-size: 20px;
     margin-top: 16px;
     line-height: 1.4;
-    
+
 `

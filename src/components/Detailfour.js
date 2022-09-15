@@ -2,37 +2,38 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-function Detail() {
+function Detailfour() {
   return (
     <Container>
         <Background>
-            <img src='https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591031799-415LLMdH0xL.jpg'/>
+            <img src='https://m.media-amazon.com/images/I/51UZurRCX4L.jpg'/>
         </Background>
         <Controls>
             {/* <AddButton>
                 <span>+</span>
                 <span>ADD</span>
             </AddButton> */}
-                        <AddButton>
+            <AddButton>
                 <span>+</span>
                 <span>BUY</span>
             </AddButton>
             <ShareButton>
                 {/* <img src='/images/group-icon.png' /> */}
-                <span>$2000</span>
+                <span>$980</span>
             </ShareButton>
         </Controls>
         <SubTitle>
-                2016 - SHOE DOG - PHIL KNIGHT
+                2019 - NO EXCUSES - BOB STOOPS
         </SubTitle>
         <Description>
-            NEW YORK TIMES BESTSELLER In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days as an intrepid start-up and its evolution into one of the world’s most iconic, game-changing, and profitable brands.Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. 
+            From the legendary Oklahoma coach, a candid and inspiring memoir.
+            When Bob Stoops took over as football coach in 1999, the Oklahoma Sooners were in disarray with back-to-back losing seasons.But in just two years' time, Stoops achieved the seemingly impossible: winning a national championship and returning the struggling Sooners to their powerhouse status, churning out NFL talent, Heisman Trophy winners and conference championships, bowl wins and national title runs on a regular basis.
         </Description>
     </Container>
   )
 }
 
-export default Detail
+export default Detailfour
 const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
@@ -101,5 +102,4 @@ const Description = styled.div`
     font-size: 20px;
     margin-top: 16px;
     line-height: 1.4;
-    
 `

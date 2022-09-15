@@ -1,11 +1,67 @@
-import React from 'react';
+import React, { useEffect } from 'react'
+import { auth, provider } from "../firebase"
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom';
+import {
+    selectUserName,
+    selectUserPhoto,
+    setUserLogin,
+    setSignOut
+} from "../features/user/userSlice"
+import { useDispatch,useSelector } from "react-redux"
+import { Link } from "react-router-dom"
 
 function Header() {
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const userName = useSelector(selectUserName);
+    const userPhoto = useSelector(selectUserPhoto);
+
+    useEffect(() => {
+        auth.onAuthStateChanged(async ( user ) => {
+            if(user){
+                dispatch(setUserLogin({
+                name: user.displayName,
+                email: user.email,
+                photo: user.photoURL
+            }))
+            navigate('/')
+            }
+        })
+    }, [])
+
+    const signIn = () => {
+        auth.signInWithPopup(provider)
+        .then((result) => {
+            let user = result.user
+            dispatch(setUserLogin({
+                name: user.displayName,
+                email: user.email,
+                photo: user.photoURL
+            }))
+            navigate('/')
+        })
+    }
+
+    const signOut = () => {
+        auth.signOut()
+        .then(() => {
+            dispatch(setSignOut());
+            navigate("/login")
+        })
+    }
+
   return (
-    <Nav>
+    <Nav><Link to={'/'}>
         <Logo src="/images/logo.svg" />
-        <NavMenu>
+        </Link>
+        { !userName ? (
+            <LoginContainer>
+                    <Login onClick={signIn}>LOGIN</Login>
+            </LoginContainer>
+            ):
+            <>
+                <NavMenu>
             <a>
                 <img src='/images/home-icon.svg' />
                 <span>HOME</span>
@@ -18,14 +74,31 @@ function Header() {
                 <img src='/images/watchlist-icon.svg' />
                 <span>LIST</span>
             </a>
-            <a>
+            {/* <a>
                 <img src='/images/original-icon.svg' />
                 <span>OFFERS</span>
+            </a> */}
+            <a>
+                <img src='/images/original-icon.svg' />
+                <span>CART</span>
+                {/* </Link> */}
+            </a>
+            <a><Link to={'/newLogin'}>
+                <img src='/images/group-icon.png' />
+                <span>LOGIN</span>
+                </Link>
             </a>
 
         </NavMenu>
-        <UserImg src='/images/messi.jpg'/>
+        <UserImg 
+            onClick={ signOut }
+            src='/images/messi.jpg'/>
+        
 
+
+            </>
+        }
+        
     </Nav>
   )
 }
@@ -43,6 +116,7 @@ const Nav = styled.nav`
 
 const Logo = styled.img`
     width : 80px;
+    cursor: pointer;
 `
 
 const NavMenu = styled.div`
@@ -50,7 +124,7 @@ const NavMenu = styled.div`
     flex: 1;
     margin-left: 25px;
     align-items:center;
-    a{
+    a {
         display:flex;
         align-items:center;
         padding: 0 12px;
@@ -94,4 +168,26 @@ const UserImg = styled.img`
     height : 48px;
     border-radius: 50%;
     cursor : pointer;
+`
+
+const Login = styled.div`
+    border: 1px solid #f9f9f9;
+    padding: 8px 16px;
+    border-radius: 4px;
+    letter-spacing: 1.5px;
+    background-color: rgba(0,0,0,0.6);
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        border-color: transparent;
+    }
+`
+
+const LoginContainer = styled.div`
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 `

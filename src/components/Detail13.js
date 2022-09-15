@@ -2,37 +2,37 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-function Detail() {
+function Detail13() {
   return (
     <Container>
         <Background>
-            <img src='https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591031799-415LLMdH0xL.jpg'/>
+            <img src='https://image.scoopwhoop.com/q30/s3.scoopwhoop.com/bk1/bk2.jpg'/>
         </Background>
         <Controls>
             {/* <AddButton>
                 <span>+</span>
                 <span>ADD</span>
             </AddButton> */}
-                        <AddButton>
+            <AddButton>
                 <span>+</span>
                 <span>BUY</span>
             </AddButton>
             <ShareButton>
                 {/* <img src='/images/group-icon.png' /> */}
-                <span>$2000</span>
+                <span>$900</span>
             </ShareButton>
         </Controls>
         <SubTitle>
-                2016 - SHOE DOG - PHIL KNIGHT
+                1964 - Autobiography of an Unknown Indian  - Nirad C. Chaudhuri
         </SubTitle>
         <Description>
-            NEW YORK TIMES BESTSELLER In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days as an intrepid start-up and its evolution into one of the world’s most iconic, game-changing, and profitable brands.Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. 
+            About the BookWritten by a self-confessed Anglophile, Autobiography of An Unknown Indian is a witty and endearing account of Nirad C. Chaudhuri's life. The book delves into the mind of the author as he takes his readers down memory lane to a pre-independence India. Written in a sarcastic manner that takes potshots at both Indian as well as British cultures, this book is one of the early works of Indian literature written in English. The book offers an authentic peek into the way India functioned during the last days of British rule. It draws various incidents from the author's life and lets us understand his views on life gained from his different experiences. Born into an educated Bengali household, the author led a life where the majority of his influences were from the western part of the world. The book starts off with a dedication to the British rule meant in a witty and sarcastic way.
         </Description>
     </Container>
   )
 }
 
-export default Detail
+export default Detail13
 const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
@@ -95,11 +95,12 @@ const SubTitle = styled.div`
     font-size: 15px;   
     min-height: 20px;
     margin-top: 20px;
+    text-transform: uppercase;
 `
 const Description = styled.div`
     position: fixed;
     font-size: 20px;
     margin-top: 16px;
     line-height: 1.4;
-    
+
 `

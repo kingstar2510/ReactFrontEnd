@@ -2,37 +2,37 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-function Detail() {
+function Detail15() {
   return (
     <Container>
         <Background>
-            <img src='https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591031799-415LLMdH0xL.jpg'/>
+            <img src='https://gobookmart.com/wp-content/uploads/2021/07/8-Best-Books-by-Indian-Authors-in-2021-so-far-1.jpg'/>
         </Background>
         <Controls>
             {/* <AddButton>
                 <span>+</span>
                 <span>ADD</span>
             </AddButton> */}
-                        <AddButton>
+            <AddButton>
                 <span>+</span>
                 <span>BUY</span>
             </AddButton>
             <ShareButton>
                 {/* <img src='/images/group-icon.png' /> */}
-                <span>$2000</span>
+                <span>$780</span>
             </ShareButton>
         </Controls>
         <SubTitle>
-                2016 - SHOE DOG - PHIL KNIGHT
+                2021 - The Last Queen- Chitra Banerjee Divakaruni
         </SubTitle>
         <Description>
-            NEW YORK TIMES BESTSELLER In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days as an intrepid start-up and its evolution into one of the world’s most iconic, game-changing, and profitable brands.Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. 
+           'I am Rani Jindan, Mother of the Khalsa. That is my identity. That is my fate.'While we have all heard tales of Rani Lakshmi Bai and Padmavati, not many of us are familiar with another Indian queen.Daughter of the royal kennel keeper, the beautiful Jindan Kaur went on to become Maharaja Ranjit Singh's youngest and last queen; his favourite. She became regent when her son Dalip, barely six years old, unexpectedly inherited the throne. Sharp-eyed, stubborn, passionate, and dedicated to protecting her son's heritage, Jindan distrusted the British and fought hard to keep them from annexing Punjab. Defying tradition, she stepped out of the zenana, cast aside the veil and conducted state business in public. 
         </Description>
     </Container>
   )
 }
 
-export default Detail
+export default Detail15
 const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
@@ -95,11 +95,12 @@ const SubTitle = styled.div`
     font-size: 15px;   
     min-height: 20px;
     margin-top: 20px;
+    text-transform: uppercase;
 `
 const Description = styled.div`
     position: fixed;
     font-size: 20px;
     margin-top: 16px;
     line-height: 1.4;
-    
+
 `
